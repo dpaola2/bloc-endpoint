@@ -7,6 +7,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/endpoint" do
+    header "Access-Control-Allow-Origin: *"
     "foobar"
   end
 end
